@@ -1,0 +1,31 @@
+class Data {
+	// data members of the class.
+	// initialized with default values.
+	String name = "Ramu";
+	int id = 99;
+	// This is a default constructor.
+	Data(){
+		System.out.println("Default constructor called.");
+	}
+	
+	/*  This is a parameterized constructor.
+		This constructor initializes the data members
+		with the given parameters.
+	*/
+	Data(String name, int id)
+	{
+		this.name = name;
+		this.id = id;
+	}
+}
+public class F_Parameterized {
+	public static void main(String[] args)
+	{	
+		// This would invoke the parameterized constructor.
+		Data data = new Data("Kanish", 102);
+		System.out.println("Name: " + data.name	+ " and ID: " + data.id);
+		// This would invoke the default constructor.
+		Data data1 = new Data();
+		System.out.println("Name: " + data1.name	+ " and ID: " + data1.id);
+	}
+}
